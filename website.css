@@ -10,6 +10,7 @@
 }
 
 
+
 /* Body */
 html {
   font-size: 62.5%;
@@ -101,6 +102,7 @@ blockquote {
   border-left: 5px solid var(--solid);
   margin-bottom: 2.5rem;
   background-color: var(--background);
+  font-style: normal;
 }
 .info {
   border: 2px dotted var(--solid-info);
@@ -163,7 +165,9 @@ footer {
   margin-left: 0;
   padding-left: 1em;
 }
-
+ul.blog-posts li span {
+  flex-basis: 200px;
+}
 .blog-posts > li:before {
   display: inline-block;
   content: "–";
