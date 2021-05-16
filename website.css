@@ -115,7 +115,8 @@ img {
   height: auto;
   max-width: 100%;
   margin-top: 0px;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+}
 
 /* Pre and Code */
 pre {
@@ -162,11 +163,18 @@ footer {
   margin-left: 0;
   padding-left: 1em;
 }
+
 .blog-posts > li:before {
   display: inline-block;
   content: "–";
   width: 1em;
   margin-left: -1em;
+}
+
+.blog-posts time {
+  font-style: normal;
+  font-weight: bolder;
+  margin-right: 1em;
 }
 
 nav a:not(:first-child):before {
