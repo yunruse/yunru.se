@@ -156,11 +156,8 @@ header {
   margin-top: -1em;
   padding-top: -3em;
 }
-main::before {
-  /* Ensure header doesn't overlap */
-  content: " ";
-  display: block;
-  height: 6em;
+main {
+  margin-top: 6em;
 }
 
 footer {
