@@ -2,6 +2,14 @@
  * Based on github.com/oxalorg/sakura
  */
 
+:root {
+  --solid:           #eb98a1; /* hsv(354, 35, 92) */
+  --solid-info:      #98c2eb; /* hsv(210, 35, 92) */
+  --background:      #40363a; /* hsv(354, 16, 25) */
+  --background-info: #363b40; /* hsv(210, 16, 25) */
+}
+
+
 /* Body */
 html {
   font-size: 62.5%;
@@ -61,12 +69,12 @@ small, sub, sup {
 }
 
 hr {
-  border-color: #eb99a1;
+  border-color: var(--solid);
 }
 
 a {
   text-decoration: none;
-  color: #eb99a1;
+  color: var(--solid);
 }
 a:hover {
   color: #DA4453;
@@ -90,9 +98,13 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #eb99a1;
+  border-left: 5px solid var(--solid);
   margin-bottom: 2.5rem;
-  background-color: #40363a;
+  background-color: var(--background);
+}
+.info {
+  border: 2px dotted var(--solid-info);
+  background-color: var(--background-info);
 }
 
 blockquote p {
@@ -107,7 +119,7 @@ img {
 
 /* Pre and Code */
 pre {
-  background-color: #40363a;
+  background-color: var(--background);
   display: block;
   padding: 1em;
   overflow-x: auto;
@@ -118,7 +130,7 @@ pre {
 code {
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #40363a;
+  background-color: var(--background);
   white-space: pre-wrap;
 }
 
@@ -139,28 +151,32 @@ footer {
   text-align: center;
 }
 
+.avatar {
+  height: 150px;
+  float: left;
+  margin-right: 1em;
+}
+
 .blog-posts {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
 }
 .blog-posts > li:before {
-    display: inline-block;
-    content: "–";
-    width: 1em;
-    margin-left: -1em;
+  display: inline-block;
+  content: "–";
+  width: 1em;
+  margin-left: -1em;
 }
 
 nav a:not(:first-child):before {
-    margin-right: 0.2em;
-    content: "·";
-    opacity: 0.3;
-    text-decoration: none !important;
+  margin-right: 0.2em;
+  content: "·";
+  opacity: 0.3;
+  text-decoration: none !important;
 }
 
 nav a:after{
-    content: " ";
-    width: 100%;
-    
+  content: " ";
+  width: 100%;   
 }
-
