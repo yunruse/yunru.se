@@ -1,0 +1,18 @@
+@                  10800 IN SOA   ns1.gandi.net. hostmaster.gandi.net. 1621180841 10800 3600 604800 10800
+; Squarespace
+@                  10800 IN A     198.185.159.144
+@                  10800 IN A     198.185.159.145
+@                  10800 IN A     198.49.23.144
+@                  10800 IN A     198.49.23.145
+www                10800 IN CNAME ext-cust.squarespace.com
+; Migadu mail
+@                  10800 IN MX    10 aspmx1.migadu.com.
+@                  10800 IN MX    20 aspmx2.migadu.com.
+@                  3600  IN TXT   "v=spf1" "a" "mx" "include:spf.migadu.com" "~all"
+_dmarc             10800 IN TXT   "v=DMARC1"
+default._domainkey 10800 IN TXT   "v=DKIM1"
+; Have I Been Pwned
+@                  3600  IN TXT   "have-i-been-pwned-verification=cf7b47e6cd6d7e44b7763ec2706da61f"
+; TO ADD: Bear blog
+bear               3600  IN CNAME shaped-krill-fusn49u0rpoovwvgh0i6za5w.herokudns.com
+bear               3600  IN TXT   "look-for-the-bear-necessities"
