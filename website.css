@@ -3,6 +3,7 @@
  */
 
 :root {
+  --text:            #555;
   --solid:           #ee51ae;
   --solid-info:      #98c2eb;
   --background:      #f0d2de;
@@ -20,9 +21,16 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: #555;
+  color: var(--text);
   background-color: #fffafc;
   padding: 13px;
+}
+
+/* Override bearblog's dark mode */
+@media (prefers-color-scheme: dark) {
+  body, blockquote, h1, h2, h3, h4, h5, h6, strong, b {
+    color: var(--text);
+  }
 }
 
 @media (max-width: 684px) {
