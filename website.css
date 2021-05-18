@@ -126,6 +126,11 @@ img {
   margin-bottom: 2.5rem;
 }
 
+figcaption {
+  font-size: 0.6em;
+  opacity: 0.8;
+}
+
 /* Pre and Code */
 pre {
   background-color: var(--background);
@@ -133,7 +138,6 @@ pre {
   padding: 1em;
   overflow-x: auto;
   margin-top: 0px;
-  margin-bottom: 2.5rem;
 }
 
 code {
@@ -143,10 +147,11 @@ code {
   white-space: pre-wrap;
 }
 
-pre > code {
+pre code {
   padding: 0;
   background-color: transparent;
   white-space: pre;
+  margin-bottom: -1.5em;
 }
 
 /* Site elements */
