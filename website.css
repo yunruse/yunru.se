@@ -207,12 +207,6 @@ footer {
 ul.blog-posts li span {
   flex-basis: 200px;
 }
-.blog-posts > li:before {
-  display: inline-block;
-  content: "–";
-  width: 1em;
-  margin-left: -1em;
-}
 
 .blog-posts time {
   font-style: normal;
