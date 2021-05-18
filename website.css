@@ -126,6 +126,17 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.float-left {
+  float: left;
+  transform: translateX(-5em);
+  margin-right: -4em;
+}
+.float-right {
+  float: right;
+  transform: translateX(5em);
+  margin-left: -4em;
+}
+
 figcaption {
   font-size: 0.6em;
   opacity: 0.8;
