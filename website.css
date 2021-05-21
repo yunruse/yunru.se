@@ -82,10 +82,11 @@ hr {
 a {
   text-decoration: none;
   color: var(--solid);
+  border-bottom: 2px solid transparent;
 }
 a:hover {
   color: #DA4453;
-  border-bottom: 2px solid #d9d8dc;
+  border-bottom-color: #d9d8dc;
 }
 
 ul {
