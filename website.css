@@ -213,15 +213,3 @@ ul.blog-posts li span {
   font-weight: bolder;
   margin-right: 1em;
 }
-
-nav a:not(:first-child):before {
-  margin-right: 0.2em;
-  content: "·";
-  opacity: 0.3;
-  text-decoration: none !important;
-}
-
-nav a:after{
-  content: " ";
-  width: 100%;   
-}
