@@ -84,6 +84,9 @@ a {
   color: var(--solid);
   border-bottom: 2px solid transparent;
 }
+.noUnderline {
+  border-bottom: none;
+}
 a:hover {
   color: #DA4453;
   border-bottom-color: #d9d8dc;
